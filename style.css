@@ -930,21 +930,49 @@ p {
 
 /* EXISTING OTHER PAGE CLASSES */
 .finch {
-    background-image: url(assets/finch.png);
+    background-image: url(assets/PORTFOLIO_THUMBNAILS/finch.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .platts {
-    background-image: url(assets/platts.png);
+    background-image: url(assets/PORTFOLIO_THUMBNAILS/platts.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .fresh-take {
-    background-image: url(assets/freshtake.png);
+    background-image: url(assets/PORTFOLIO_THUMBNAILS/freshtake.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.herbert-homes {
+    background-image: url(assets/PORTFOLIO_THUMBNAILS/herberthomes.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.maguire {
+    background-image: url(assets/PORTFOLIO_THUMBNAILS/maguire.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bnc-realstate {
+    background-image: url(assets/PORTFOLIO_THUMBNAILS/bnc_realstate.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bf-animal {
+    background-image: url(assets/PORTFOLIO_THUMBNAILS/bf-animal.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
