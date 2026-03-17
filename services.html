@@ -4,534 +4,308 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Services | WRDW Creative Services</title>
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
 </head>
+<body class="services-page">
 
-<style>
-
-    .glow {
-        box-shadow: 0 0 50px rgb(71, 246, 252);
-    }
-
-    .wave-top{
-        z-index: -1;
-    }
-</style>
-
-
-<body>
     <div class="container">
-        <div class="menu">
+        <header class="menu">
             <div class="logo">
-                <a href="index.html" class=""><img src="assets/gray_logo.png" class="logo-img" style="width: 50%;"></a>
+                <a href="index.html">
+                    <img src="assets/gray_logo.png" class="logo-img" alt="Gray Logo">
+                </a>
             </div>
 
-            <div class="menu-items">
-                <a href="index.html" class="portfolio" >Home</a>
-                <a href="portfolio.html" class="portfolio">Portfolio</a>
-                <a href="about.html" class="about">About</a>
-                <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="btnFont contact" style="padding: .7rem; background-color: var(--btnColors); border-radius: 1rem;"><span>Contact</span></a>
-            </div>
-        </div>
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <div class="tv-services" id="broadcast-tv">
-            <div class="tv-services-title">
-                <h1>Broadcast TV</h1>
-            </div>
-            
+            <nav class="menu-items" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="btnFont contact glow-btn">
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </header>
 
-            <!-- TV SERVICES BROADCAST -->
-            <div class="tv-services-wrapper" >
-                <div class="tv-services-box box-size">
-                    <div class="tv-services-box-header">
-                        <div class="tv-services-box-header-img">
-                            <img src="assets/logos/12.png" alt="">
+        <section class="services-page-hero">
+            <div class="services-page-hero-inner reveal">
+                <p class="services-kicker">Media Solutions</p>
+                <h1>Services Built to Reach More People</h1>
+                <p class="services-hero-text">
+                    From broadcast and streaming to digital, radio, and outdoor, we build campaigns that connect with the right audience across every screen and platform.
+                </p>
+
+                <div class="services-page-hero-buttons">
+                    <a href="#broadcast-tv" class="button-2 btnFont glow-btn">
+                        <span>VIEW SERVICES</span>
+                    </a>
+
+                    <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="button-1 btnFont btn-auto">
+                        <span>ADVERTISE WITH US</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BROADCAST TV -->
+        <section class="service-section" id="broadcast-tv">
+            <div class="service-section-header reveal">
+                <p class="services-kicker">Broadcast</p>
+                <h2>Broadcast TV</h2>
+                <p>
+                    Reach local viewers through trusted network programming, live events, news coverage, and entertainment favorites.
+                </p>
+            </div>
+
+            <div class="service-card-grid">
+                <article class="service-card reveal">
+                    <div class="service-card-top">
+                        <div class="service-card-logo">
+                            <img src="assets/logos/12.png" alt="WRDW CBS">
                         </div>
-                        <div class="tv-services-box-header-text">
-                            <h1>WRDW (CBS)</h1>
+                        <div class="service-card-heading">
+                            <h3>WRDW (CBS)</h3>
                             <p>Your Local CBS Favorites</p>
                         </div>
                     </div>
-                    <ul>
+
+                    <ul class="service-list">
                         <li>News 12</li>
                         <li>Price Is Right</li>
-                        <li>Wheel/Jeopardy</li>
+                        <li>Wheel / Jeopardy</li>
                         <li>NFL</li>
                         <li>March Madness</li>
                         <li>Masters</li>
                         <li>Much more</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="tv-services-box box-size">
-                    <div class="tv-services-box-header">
-                        <div class="tv-services-box-header-img">
-                            <img src="assets/logos/26.png" alt="">
+                <article class="service-card reveal">
+                    <div class="service-card-top">
+                        <div class="service-card-logo">
+                            <img src="assets/logos/26.png" alt="WAGT NBC">
                         </div>
-                        <div class="tv-services-box-header-text">
-                            <h1>WAGT (NBC)</h1>
+                        <div class="service-card-heading">
+                            <h3>WAGT (NBC)</h3>
                             <p>National Hits & Local Coverage</p>
                         </div>
                     </div>
-                    <ul>
+
+                    <ul class="service-list">
                         <li>News 12 26</li>
                         <li>Olympics</li>
                         <li>Today Show</li>
                         <li>Nascar</li>
                         <li>Much more</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="tv-services-box box-size">
-                    <div class="tv-services-box-header">
-                        <div class="tv-services-box-header-img">
-                            <img src="assets/logos/my12.png" alt="">
+                <article class="service-card reveal">
+                    <div class="service-card-top">
+                        <div class="service-card-logo">
+                            <img src="assets/logos/my12.png" alt="MY TV">
                         </div>
-                        <div class="tv-services-box-header-text">
-                            <h1>ERDW (MY TV)</h1>
+                        <div class="service-card-heading">
+                            <h3>ERDW (MY TV)</h3>
                             <p>Primetime Sitcoms & Weekend Shows</p>
                         </div>
                     </div>
-                    <ul>
+
+                    <ul class="service-list">
                         <li>Big Bang Theory</li>
                         <li>Young Sheldon</li>
-                        <li>Wheel/Jeopardy (weekends)</li>
+                        <li>Wheel / Jeopardy (weekends)</li>
                         <li>News 12 at 10p</li>
                         <li>Much more</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="tv-services-box box-size">
-                    <div class="tv-services-box-header">
-                        <div class="tv-services-box-header-img">
-                            <img src="assets/logos/peachtree.png" alt="">
+                <article class="service-card reveal">
+                    <div class="service-card-top">
+                        <div class="service-card-logo">
+                            <img src="assets/logos/peachtree.png" alt="Peachtree Sports">
                         </div>
-                        <div class="tv-services-box-header-text">
-                            <h1>EAGT (Peachtree Sports)</h1>
+                        <div class="service-card-heading">
+                            <h3>EAGT (Peachtree Sports)</h3>
                             <p>Your Home for Local & Pro Sports</p>
                         </div>
                     </div>
-                    <ul>
+
+                    <ul class="service-list">
                         <li>Braves Baseball</li>
                         <li>Atlanta Hawks</li>
                         <li>Good Morning Football</li>
                         <li>College Coach Shows</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="tv-services-box box-size">
-                    <div class="tv-services-box-header">
-                        <div class="tv-services-box-header-img">
-                            <img src="assets/logos/metv.png" alt="">
+                <article class="service-card reveal">
+                    <div class="service-card-top">
+                        <div class="service-card-logo">
+                            <img src="assets/logos/metv.png" alt="MeTV">
                         </div>
-                        <div class="tv-services-box-header-text">
-                            <h1>ME TV</h1>
+                        <div class="service-card-heading">
+                            <h3>ME TV</h3>
                             <p>Timeless Classics You Love</p>
                         </div>
                     </div>
-                    <ul>
+
+                    <ul class="service-list">
                         <li>Mash</li>
                         <li>Andy Griffith Show</li>
                         <li>Gunsmoke</li>
                         <li>News 12 at 10p</li>
                         <li>Much more</li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="tv-services-box box-size">
-                    <div class="tv-services-box-header">
-                        <div class="tv-services-box-header-img">
-                            <img src="assets/logos/telemundo2.png" alt="">
+                <article class="service-card reveal">
+                    <div class="service-card-top">
+                        <div class="service-card-logo">
+                            <img src="assets/logos/telemundo2.png" alt="Telemundo">
                         </div>
-                        <div class="tv-services-box-header-text">
-                            <h1>Telemundo</h1>
+                        <div class="service-card-heading">
+                            <h3>Telemundo</h3>
                             <p>Top Spanish Language Programming</p>
                         </div>
                     </div>
-                    <ul>
+
+                    <ul class="service-list">
                         <li>World Cup</li>
                         <li>Telemundo GA News</li>
                         <li>Hoy Día</li>
                         <li>Miss Universe Latina, el reality</li>
                         <li>Much more</li>
                     </ul>
-                </div>
+                </article>
             </div>
-        </div>
-        <!-- END OF TV SERVICES BROADCAST -->
+        </section>
 
-        <!-- START OF TV SERVICES STREAMING -->
-
-        <div class="tv-services darkbg" id="streaming-tv">
-            <!-- TITLE -->
-            <h1>STREAMING TV</h1>
-            <!-- CONTENTS -->
-            <div class="tv-services-wrapper column" >
-                <div class="tv-services-streaming wrap">
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/tv.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>80% of US households now use Streaming TV</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/live.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Live on Demand available</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/skip.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Non-Skippable available </p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/graph.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Target by income, zip code, demographics, behavioral, etc. </p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/freq.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Frequency cap available </p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/dashboard.png" alt="">
-                        </div>
-
-                        <a href="https://graytv-my.sharepoint.com/personal/kameron_robinson_gray_tv/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkameron%5Frobinson%5Fgray%5Ftv%2FDocuments%2FAttachments%2FGDM%20Dashboard%20Image%2Ejpg&parent=%2Fpersonal%2Fkameron%5Frobinson%5Fgray%5Ftv%2FDocuments%2FAttachments&ga=1" style="text-decoration: none;" target="_blank">
-                            <div class="tv-services-streaming-box-text" >
-                                <p>GDM Dashboard <br> <span style="font-weight: 300;">Click me!</span></p>
-                            </div>
-                        </a>
-
-                        
-                    </div>
-                </div>
+        <!-- STREAMING TV -->
+        <section class="service-section service-section-alt" id="streaming-tv">
+            <div class="service-section-header reveal">
+                <p class="services-kicker">Connected TV</p>
+                <h2>Streaming TV</h2>
+                <p>
+                    Deliver targeted video campaigns to households across streaming platforms with flexible audience targeting and reporting.
+                </p>
             </div>
-        </div>
+
+            <div class="service-icon-grid service-icon-grid-6">
+                <article class="service-icon-card reveal">
+                    <img src="assets/tv.png" alt="">
+                    <p>80% of US households now use Streaming TV</p>
+                </article>
+
+                <article class="service-icon-card reveal">
+                    <img src="assets/live.png" alt="">
+                    <p>Live on Demand available</p>
+                </article>
+
+                <article class="service-icon-card reveal">
+                    <img src="assets/skip.png" alt="">
+                    <p>Non-Skippable available</p>
+                </article>
+
+                <article class="service-icon-card reveal">
+                    <img src="assets/graph.png" alt="">
+                    <p>Target by income, zip code, demographics, behavioral, etc.</p>
+                </article>
+
+                <article class="service-icon-card reveal">
+                    <img src="assets/freq.png" alt="">
+                    <p>Frequency cap available</p>
+                </article>
+
+                <article class="service-icon-card reveal service-icon-card-link">
+                    <img src="assets/dashboard.png" alt="">
+                    <a href="https://graytv-my.sharepoint.com/personal/kameron_robinson_gray_tv/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkameron%5Frobinson%5Fgray%5Ftv%2FDocuments%2FAttachments%2FGDM%20Dashboard%20Image%2Ejpg&parent=%2Fpersonal%2Fkameron%5Frobinson%5Fgray%5Ftv%2FDocuments%2FAttachments&ga=1" target="_blank">
+                        GDM Dashboard<br><span>Click me!</span>
+                    </a>
+                </article>
+            </div>
+        </section>
 
         <!-- DIGITAL -->
-
-        <div class="tv-services" id="digital-tv">
-            <!-- TITLE -->
-            <h1 >DIGITAL</h1>
-            <!-- CONTENTS -->
-            <div class="tv-services-wrapper column" >
-                <div class="tv-services-streaming wrap wrap-4">
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/targeted.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Targeted TV</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/targeted-display.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Targeted Display</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/gaming.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Gaming </p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/landing page.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Landing Page </p>
-                        </div>
-                    </div> 
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/ads.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Web / Display Ads</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/email.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Email (10% guarantee open rate)</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/somed.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Social Media Post </p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/retargeting.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Re-targeting</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/nativearticle.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Native Article</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/paidsearch.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Paid Search</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/seo.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>SEO Management + Local Directory Management</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/meta.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Meta (Facebook) Ads</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="service-section" id="digital-marketing">
+            <div class="service-section-header reveal">
+                <p class="services-kicker">Digital</p>
+                <h2>Digital</h2>
+                <p>
+                    Expand your reach with targeted digital products designed to support awareness, engagement, and conversion.
+                </p>
             </div>
-        </div>
+
+            <div class="service-icon-grid service-icon-grid-4">
+                <article class="service-icon-card reveal"><img src="assets/targeted.png" alt=""><p>Targeted TV</p></article>
+                <article class="service-icon-card reveal"><img src="assets/targeted-display.png" alt=""><p>Targeted Display</p></article>
+                <article class="service-icon-card reveal"><img src="assets/gaming.png" alt=""><p>Gaming</p></article>
+                <article class="service-icon-card reveal"><img src="assets/landing page.png" alt=""><p>Landing Page</p></article>
+                <article class="service-icon-card reveal"><img src="assets/ads.png" alt=""><p>Web / Display Ads</p></article>
+                <article class="service-icon-card reveal"><img src="assets/email.png" alt=""><p>Email (10% guarantee open rate)</p></article>
+                <article class="service-icon-card reveal"><img src="assets/somed.png" alt=""><p>Social Media Post</p></article>
+                <article class="service-icon-card reveal"><img src="assets/retargeting.png" alt=""><p>Re-targeting</p></article>
+                <article class="service-icon-card reveal"><img src="assets/nativearticle.png" alt=""><p>Native Article</p></article>
+                <article class="service-icon-card reveal"><img src="assets/paidsearch.png" alt=""><p>Paid Search</p></article>
+                <article class="service-icon-card reveal"><img src="assets/seo.png" alt=""><p>SEO Management + Local Directory Management</p></article>
+                <article class="service-icon-card reveal"><img src="assets/meta.png" alt=""><p>Meta (Facebook) Ads</p></article>
+            </div>
+        </section>
 
         <!-- RADIO -->
-
-        <div class="tv-services darkbg" id="radio">
-            <!-- TITLE -->
-            <h1 >RADIO</h1>
-            <!-- CONTENTS -->
-            <div class="tv-services-wrapper column" >
-                <div class="tv-services-streaming wrap wrap-4">
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/platforms.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Platforms For Audio Streaming</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/musictalksports.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Music - Talk - Sports - Podcast</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/pandora.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Pandora</p>
-                        </div>
-                    </div> 
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/iheart.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>iHeart Radio</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/acast.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Acast </p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/cumulus.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Cumulus Media</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/spotify.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Spotify</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="service-section service-section-alt" id="radio">
+            <div class="service-section-header reveal">
+                <p class="services-kicker">Audio</p>
+                <h2>Radio</h2>
+                <p>
+                    Reach listeners across music, talk, sports, and podcast environments through leading streaming audio platforms.
+                </p>
             </div>
-        </div>
+
+            <div class="service-icon-grid service-icon-grid-4">
+                <article class="service-icon-card reveal"><img src="assets/platforms.png" alt=""><p>Platforms For Audio Streaming</p></article>
+                <article class="service-icon-card reveal"><img src="assets/musictalksports.png" alt=""><p>Music - Talk - Sports - Podcast</p></article>
+                <article class="service-icon-card reveal"><img src="assets/pandora.png" alt=""><p>Pandora</p></article>
+                <article class="service-icon-card reveal"><img src="assets/iheart.png" alt=""><p>iHeart Radio</p></article>
+                <article class="service-icon-card reveal"><img src="assets/acast.png" alt=""><p>Acast</p></article>
+                <article class="service-icon-card reveal"><img src="assets/cumulus.png" alt=""><p>Cumulus Media</p></article>
+                <article class="service-icon-card reveal"><img src="assets/spotify.png" alt=""><p>Spotify</p></article>
+            </div>
+        </section>
 
         <!-- OUTDOOR -->
-
-        <div class="tv-services " id="outdoor">
-            <!-- TITLE -->
-            <h1 >OUTDOOR</h1>
-            <!-- CONTENTS -->
-            <div class="tv-services-wrapper column" >
-                <div class="tv-services-streaming wrap">
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/billboards.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Billboards</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/airport.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Airport Signage</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/gasstation.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Gas Stations</p>
-                        </div>
-                    </div> 
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/mallsignage.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Mall Signage</p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/taxi.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Taxi </p>
-                        </div>
-                    </div>
-
-                    <div class="tv-services-streaming-box">
-                        <div class="tv-services-streaming-box-icon">
-                            <img src="assets/busstop.png" alt="">
-                        </div>
-
-                        <div class="tv-services-streaming-box-text">
-                            <p>Bus Stop</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="service-section" id="outdoor">
+            <div class="service-section-header reveal">
+                <p class="services-kicker">Out of Home</p>
+                <h2>Outdoor</h2>
+                <p>
+                    Build visibility in high-traffic spaces with out-of-home media placements across the market.
+                </p>
             </div>
-        </div>
 
+            <div class="service-icon-grid service-icon-grid-6">
+                <article class="service-icon-card reveal"><img src="assets/billboards.png" alt=""><p>Billboards</p></article>
+                <article class="service-icon-card reveal"><img src="assets/airport.png" alt=""><p>Airport Signage</p></article>
+                <article class="service-icon-card reveal"><img src="assets/gasstation.png" alt=""><p>Gas Stations</p></article>
+                <article class="service-icon-card reveal"><img src="assets/mallsignage.png" alt=""><p>Mall Signage</p></article>
+                <article class="service-icon-card reveal"><img src="assets/taxi.png" alt=""><p>Taxi</p></article>
+                <article class="service-icon-card reveal"><img src="assets/busstop.png" alt=""><p>Bus Stop</p></article>
+            </div>
+        </section>
 
-        <!-- END OF TV SERVICES STREAMING -->
-
-
-        <div class="services">
+        <section class="services">
             <div class="services-wrapper">
-                <div class="services-1  reveal">
+                <div class="services-1 reveal">
                     <div class="services-box">
                         <img src="assets/broadcast.png" alt="">
                     </div>
@@ -566,15 +340,17 @@
                     <p>Outdoor</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="collaborate-bg">
             <div class="collaborate reveal">
                 <h3 class="reveal-right">Collaborate With Us!</h3>
                 <h1 class="reveal-left">Fuel Your Next Vision</h1>
-                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont" target="_blank" style="width: auto;"><span style="font-size: 1rem;">ADVERTISE WITH US</span></a>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont btn-auto glow-btn" target="_blank">
+                    <span>ADVERTISE WITH US</span>
+                </a>
             </div>
-        </div> 
+        </div>
     </div>
 
     <div class="footer">
@@ -583,16 +359,33 @@
         </p>
 
         <p class="footer-right">
-            Coded by <a href="https://www.jcorales.art">Jae Corales</a> - fueled by coffee and deadlines.
+            Coded by <a href="https://www.jcorales.art" target="_blank">Jae Corales</a> - fueled by coffee and deadlines.
         </p>
     </div>
 
-
-<!-- ANIMATIONS -->
-
     <script src="https://kit.fontawesome.com/74ef3fc04a.js" crossorigin="anonymous"></script>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuItems = document.querySelector('.menu-items');
+
+        if (menuToggle && menuItems) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = menuItems.classList.toggle('open');
+                menuToggle.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            menuItems.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuItems.classList.remove('open');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
+
     <script src="main.js"></script>
-<!-- END OF ANIMATIONS -->
 </body>
 </html>

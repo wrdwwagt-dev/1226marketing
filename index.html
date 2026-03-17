@@ -5,247 +5,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WRDW News 12/26</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<style>
-    li{
-        color: var(--btnColors);
-        font-size: 1.5rem;
-    }
-</style>
-
-
 <body>
-    <div class="blob">
+    <div class="blob"></div>
 
-    </div>
     <div class="container">
-        <div class="menu">
+        <header class="menu">
             <div class="logo">
-                <a href="index.html" class=""><img src="assets/gray_logo.png" class="logo-img" style="width: 50%;"></a>
+                <a href="index.html">
+                    <img src="assets/gray_logo.png" class="logo-img" alt="Gray Logo">
+                </a>
             </div>
 
-            <div class="menu-items">
-                <a href="index.html" class="portfolio" style="color: #0fefff;">Home</a>
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu-items" id="main-nav">
+                <a href="index.html" class="portfolio active-link">Home</a>
                 <a href="portfolio.html" class="portfolio">Portfolio</a>
                 <a href="about.html" class="about">About</a>
-                <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="btnFont contact" style="padding: .7rem; background-color: var(--btnColors); border-radius: 1rem;"><span>Contact</span></a>
-            </div>
-        </div>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="btnFont contact glow-btn">
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </header>
 
-        <div class="hero-page">
+        <section class="hero-page">
             <div class="hero-page-left">
+                <span class="hero-kicker reveal-left">WRDW / WAGT Creative Marketing</span>
+
                 <h1 class="reveal-left">We<br>Make<br>Magic</h1>
 
-                <p class="reveal-right">We are a team of creative individuals who specialize in crafting unique and engaging marketing experiences. Our passion lies in transforming ideas into reality, and we take pride in delivering high-quality work that exceeds expectations.</p>
+                <p class="reveal-right">
+                    We are a team of creative individuals who specialize in crafting unique and engaging marketing experiences.
+                    Our passion lies in transforming ideas into reality, and we take pride in delivering high-quality work that exceeds expectations.
+                </p>
 
                 <div class="button-container">
-
                     <div class="button-container-wrapper">
-                        <a href="portfolio.html" class="button-1 btnFont reveal-left">
-                        PORTFOLIO
-                    </a>
-
-                    <!-- <a href="contact.html" class="button-1 btnFont reveal-left">
-                        <span>CONTACT</span>
-                    </a> -->
-                    <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="button-2 reveal-left" ><span>ADVERTISE WITH US</span></a>
+                        <a href="portfolio.html" class="button-1 btnFont reveal-left">PORTFOLIO</a>
+                        <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="button-2 reveal-left">
+                            <span style="color: #fff;">ADVERTISE WITH US</span>
+                        </a>
                     </div>
-
-                    
                 </div>
             </div>
 
-            <div class="hero-page-right ">
-                <img src="assets/char-2.png" alt="" class="heroImg char-2">
-                <img src="assets/gray_marketing.png" alt="" class=" heroImg logo-hero reveal">                
-                <img src="assets/char-1.png" alt="" class="heroImg char-1">                
-                <img src="assets/char-3.png" alt="" class="heroImg char-3">
+            <div class="hero-page-right" aria-hidden="true">
+                <img src="assets/char-2.png" alt="" class="heroImg char-2 float-char-2">
+                <img src="assets/gray_marketing.png" alt="" class="heroImg logo-hero float-logo reveal">
+                <img src="assets/char-1.png" alt="" class="heroImg char-1 float-char-1">
+                <img src="assets/char-3.png" alt="" class="heroImg char-3 float-char-3">
             </div>
-        </div>
+        </section>
 
         <div class="wave-top">
             <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                    <path fill="#fff" d="M0,160 C480,280 960,40 1440,160 L1440,320 L0,320 Z"></path>
+                <path fill="#f7f9fc" d="M0,160 C480,280 960,40 1440,160 L1440,320 L0,320 Z"></path>
             </svg>
         </div>
 
-        <div class="sec-2">
-            <div class="sec-2-child">
-                <div class="sec-2-child-left with-bg">
+       <section class="info-section">
+    <div class="info-wrap">
 
-                </div>
+        <div class="info-card reveal">
+            <div class="info-media">
+                <img src="assets/bldg.jpg" alt="WRDW studio">
+            </div>
 
-                <div class="sec-2-child-right" >                    
-                    <h1>What We Do</h1>
+            <div class="info-content">
+                <p class="info-eyebrow">Services</p>
+                <h2>What We Do</h2>
 
-                    <ul class="mobile-ul">
-                        <li>
-                            <a href="services.html#broadcast-tv">
-                                Broadcast TV &nbsp;
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </li>
+                <ul class="info-links">
+                    <li><a href="services.html#broadcast-tv">Broadcast TV <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="services.html#streaming-tv">Streaming TV <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="https://gdmaugusta.com/" target="_blank">Digital <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="services.html#radio">Radio (Streaming Audio) <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="services.html#outdoor">Outdoor (Billboards) <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="services.html#outdoor">Full Production for All <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
 
-                        <li>
-                            <a href="services.html#streaming-tv">
-                                Streaming TV &nbsp;
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://gdmaugusta.com/">
-                                Digital &nbsp;
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.html#radio">
-                                Radio (Streaming Audio) &nbsp;
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.html#outdoor">
-                                Outdoor (Billboards) &nbsp;
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.html#outdoor">
-                                Full Production for All &nbsp;
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <a href="services.html" class="button-1"><span>SERVICES</span></a>
-                </div>
+                <a href="services.html" class="button-1 btnFont">
+                    <span>VIEW SERVICES</span>
+                </a>
             </div>
         </div>
 
-        <div class="sec-2 padtop">
-            <div class="sec-2-child">
-                <div class="sec-2-child-right">                    
-                    <h1>Why Choose Us?</h1>
+        <div class="info-card reverse reveal">
+            <div class="info-media video-media">
+                <video src="assets/videos/hbp2.mp4" autoplay controls muted playsinline></video>
+            </div>
 
-                    <ul class="mobile-ul">
-                        <li>
-                            One Sales Person
-                        </li>
+            <div class="info-content">
+                <p class="info-eyebrow">Why Work With Us</p>
+                <h2>Why Choose Us</h2>
 
-                        <li>
-                            One Invoice Package
-                            <br><span style="font-size: 1rem; color: var(--btnColors);">(Excluding coop)</span>
-                        </li>
+                <ul class="info-points">
+                    <li>One sales person</li>
+                    <li>One invoice package <span>(excluding coop)</span></li>
+                    <li>Resources from the 2nd largest broadcast company and a top five digital company</li>
+                    <li>One dashboard to review performance across platforms</li>
+                </ul>
 
-                        <li>
-                            Resources from 2nd largest Broadcast company<br>and top five digital company
-                        </li>
-
-                        <li>
-                            One dashboard to review performance of all
-                        </li>
-                    </ul>
-
-                    <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1"><span>CONTACT</span></a>
-                </div>
-
-                <div class="sec-2-child-left no-bg">
-                    <video src="assets/videos/hbp2.mp4" autoplay controls muted style="border-radius: 2rem;"></video>
-                </div>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont" target="_blank">
+                    <span>CONTACT</span>
+                </a>
             </div>
         </div>
 
-        <div class="content-3">
-            <div class="content-3-wrapper">
-                <div class="content-3-left">
-                    <h1 class="reveal-left" style="display: flex;">Let's Talk!</h1>
-                    <p class="reveal-right">
-                        We craft compelling visual content and on-air promotions that connect with viewers across platforms. From motion graphics and commercial production to branding and digital design, our creative team transforms ideas into engaging stories that support the station’s mission and captivate its audience.
+    </div>
+</section>
+
+
+
+        <section class="testimonial-section">
+            <div class="testimonial-wrap reveal">
+
+                <div class="testimonial-header">
+                    <h2>Partnered with the Region’s Best</h2>
+                    <p>
+                        Proudly partnered with the region’s top-performing businesses, trusted brands,
+                        and local leaders to create impactful campaigns that drive results.
                     </p>
-                    <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="button-2 btnFont reveal-left"><span>CONTACT</span></a>
-                </div>
-            
-                <img src="assets/Meet.png" alt="" class="meet-img reveal-right">
-            </div>
-        </div>
-
-        <div class="testimonial">
-            <div class="testimonial-wrapper">
-                <h2 class="reveal-right">Partnered with the Region’s Best</h2>
-                <p class="reveal-left">Proudly partnered with the region’s top-performing businesses, trusted brands, and local leaders to create impactful campaigns that drive results.</p>
-                
-                <!-- AUGUSTA CAR CARE TESTIMONIAL -->
-                <div class="testimonial-1 reveal-right">
-                    <div class="testimonial-top">
-                        <img src="assets/employee_icons/edna.png" alt="">
-                        <div class="testimonial-name">
-                            <p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <!-- <i class="fa-regular fa-star"></i> -->
-                                <br>
-                                <strong>Greg Dixon</strong>
-                                <br>
-                                Augusta Car Care
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-bot">
-                        <p>
-                        <!-- <i class="fa-solid fa-quote-left"></i> &nbsp; -->
-                        At first, I didn’t know what to expect with doing television advertising, but I immediately started to get calls and this has turned out to be the best investment in my business I’ve ever made."
-                        </p>
-                    </div>                    
                 </div>
 
-                <!-- PLATT'S FUNERAL -->
+                <div class="testimonial-grid">
 
-                <div class="testimonial-1 reveal-left">
-                    <div class="testimonial-top">
-                        <img src="assets/employee_icons/platts-pic.png" alt="">
-                        <div class="testimonial-name">
-                            <p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <!-- <i class="fa-regular fa-star"></i> -->
-                                <br>
-                                <strong>Will Anderson</strong>
-                                <br>
-                                Platt's Funeral Home
-                            </p>
+                    <div class="testimonial-card">
+                        <div class="testimonial-top">
+                            <img src="assets/employee_icons/greg.png" alt="Greg Dixon">
+                            <div>
+                                <div class="stars">★★★★★</div>
+                                <h3>Greg Dixon</h3>
+                                <span>Augusta Car Care</span>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="testimonial-bot">
-                        <p>
-                        <!-- <i class="fa-solid fa-quote-left"></i> &nbsp; -->
-                        The marketing team at WRDW has helped bring our television advertising vision to life and clearly communicated our business to the CSRA. They placed our ad at opportune times throughout the week, and we have heard so much positive feedback from the community. We noticed a fairly immediate return on our investment and will keep it as an important part of our marketing budget for Platt's.
+
+                        <p class="testimonial-text">
+                            At first, I didn’t know what to expect with doing television advertising,
+                            but I immediately started to get calls and this has turned out to be the
+                            best investment in my business I’ve ever made.
                         </p>
-                    </div>                    
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-top">
+                            <img src="assets/employee_icons/will.png" alt="Will Anderson">
+                            <div>
+                                <div class="stars">★★★★★</div>
+                                <h3>Will Anderson</h3>
+                                <span>Platt's Funeral Home</span>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            The marketing team at WRDW has helped bring our television advertising vision
+                            to life and clearly communicated our business to the CSRA. We noticed a fairly
+                            immediate return on our investment and will keep it as an important part of
+                            our marketing budget.
+                        </p>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
 
-        
-        
+        <section class="talk-section">
+            <div class="talk-wrap reveal">
+                <div class="talk-content">
+                    <p class="talk-eyebrow">Start the Conversation</p>
+                    <h2>Let’s Talk</h2>
+                    <p>
+                        We craft compelling visual content and on-air promotions that connect with viewers across platforms.
+                        From motion graphics and commercial production to branding and digital design, our creative team
+                        transforms ideas into engaging stories that support the station’s mission and captivate its audience.
+                    </p>
+
+                    <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="button-2 btnFont">
+                        <span style="color: #fff;">CONTACT</span>
+                    </a>
+                </div>
+
+                <div class="talk-media">
+                    <img src="assets/Meet.png" alt="Meet the team" class="meet-img">
+                </div>
+            </div>
+        </section>
+
         <div class="services">
             <div class="services-wrapper">
                 <div class="services-1 reveal">
@@ -285,19 +241,21 @@
             </div>
 
             <div class="btn-services">
-                <a href="services.html" class="button-1 btnFont" style="width: auto;"><span style="font-size: 1rem;">VIEW OUR SERVICES</span></a>
+                <a href="services.html" class="button-1 btnFont btn-auto">
+                    <span>VIEW OUR SERVICES</span>
+                </a>
             </div>
         </div>
-
-        
 
         <div class="collaborate-bg">
             <div class="collaborate reveal">
                 <h3 class="reveal-right">Collaborate With Us!</h3>
                 <h1 class="reveal-left">Fuel Your Next Vision</h1>
-                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont" target="_blank" style="width: auto;"><span style="font-size: 1rem;">ADVERTISE WITH US</span></a>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont btn-auto" target="_blank">
+                    <span>ADVERTISE WITH US</span>
+                </a>
             </div>
-        </div>      
+        </div>
     </div>
 
     <div class="footer">
@@ -310,11 +268,28 @@
         </p>
     </div>
 
-
-<!-- ANIMATIONS -->
-
     <script src="https://kit.fontawesome.com/74ef3fc04a.js" crossorigin="anonymous"></script>
+
+    <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuItems = document.querySelector('.menu-items');
+
+    if (menuToggle && menuItems) {
+        menuToggle.addEventListener('click', () => {
+            const isOpen = menuItems.classList.toggle('open');
+            menuToggle.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        menuItems.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuItems.classList.remove('open');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+</script>
     <script src="main.js"></script>
-<!-- END OF ANIMATIONS -->
 </body>
 </html>

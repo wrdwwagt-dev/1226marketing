@@ -4,199 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio | WRDW Creative Services</title>
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
 </head>
+<body class="portfolio-page-body">
 
-<style>
-
-    .glow {
-        box-shadow: 0 0 50px rgb(71, 246, 252);
-    }
-
-    .wave-top{
-        z-index: -1;
-    }
-</style>
-
-
-<body style="background-color: rgb(13,24,41);">
     <div class="container">
-        <div class="menu">
+        <header class="menu">
             <div class="logo">
-                <a href="index.html" class=""><img src="assets/gray_logo.png" class="logo-img" style="width: 50%;"></a>
+                <a href="index.html">
+                    <img src="assets/gray_logo.png" class="logo-img" alt="Gray Logo">
+                </a>
             </div>
 
-            <div class="menu-items">
-                <a href="index.html" class="portfolio" >Home</a>
-                <a href="portfolio.html" class="portfolio" style="color: #0fefff;">Portfolio</a>
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu-items" id="main-nav">
+                <a href="index.html" class="portfolio">Home</a>
+                <a href="portfolio.html" class="portfolio active-link">Portfolio</a>
                 <a href="about.html" class="about">About</a>
-                <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="btnFont contact" style="padding: .7rem; background-color: var(--btnColors); border-radius: 1rem;"><span>Contact</span></a>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="btnFont contact glow-btn">
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </header>
+
+        <section class="portfolio-landing">
+            <div class="portfolio-landing-inner reveal">
+                <p class="portfolio-kicker">Our Work</p>
+                <h1>Campaigns Built to Perform</h1>
+                <p class="portfolio-intro">
+                    Explore a selection of commercial spots, branded campaigns, and creative marketing work built to connect with audiences across broadcast, streaming, and digital platforms.
+                </p>
+                <a href="#portfolio-grid" class="button-2 btnFont glow-btn">
+                    <span>VIEW PROJECTS</span>
+                </a>
             </div>
-        </div>
+        </section>
 
-        <div class="portfolio-header">
-            <video autoplay muted loop playsinline class="bg-video">
-                <source src="assets/videos/portfolio-header.mp4" type="video/mp4" />
-            </video>
-            <div class="portfolio-header-wrapper">
-                <h1 class="reveal">Creative<br>Services</h1>
-                <p class="reveal">Explore our diverse portfolio showcasing our expertise in media production, digital marketing, and creative solutions. From broadcast to digital platforms, we bring your vision to life with innovative storytelling and engaging content.</p>
-                <a href="#portfolio" class="button-2 reveal index1"><span class="btnFont">OUR WORK</span></a>
-            </div>
-        </div>
-
-        
-
-        
-
-        <div class="cs-banner" id="portfolio">
-            <div class="cs-banner-wrapper">
-                <h1 class="reveal">Big Ideas. Real Results.</h1>
-                <div class="icons-wrapper reveal">
-                    <div class="icons reveal-left">
-                        <img src="assets/collaborative.png" alt="">
-                        <div class="wrdw-leadership-text">
-                            <p><bold>Collaborative</bold><br>
-                            We work closely with clients and each other, because the best ideas are built together.</p>
-                        </div>
-                    </div>
-
-                    <div class="icons reveal">
-                        <img src="assets/creative.png" alt="">
-                        <div class="wrdw-leadership-text">
-                            <p><bold>Creative</bold><br>
-                            We work closely with clients and each other, because the best ideas are built together.</p>
-                        </div>
-                    </div>
-
-                    <div class="icons reveal-right">
-                        <img src="assets/driven.png" alt="">
-                        <div class="wrdw-leadership-text">
-                            <p><bold>Driven</bold><br>
-                            Deadlines don’t scare us. We move fast, stay sharp, and always bring results.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio-main">
-            <div class="portfolio-wrapper">
-                <!-- FINCH & FIFTH -->
-                <a href="https://www.youtube.com/watch?v=WtkokauKX0A" class="portfolio-child finch reveal" target="_blank"></a>
-
-                <!-- PLATTS FUNERAL HOME -->
-                <a href="https://www.youtube.com/watch?v=6RWY7TQ-2_I" class="portfolio-child platts reveal" target="_blank"></a>
-
-                <!-- FRESHTAKE GROCERY -->
-                <a href="https://youtu.be/Wk15FXeoFiI" class="portfolio-child fresh-take reveal" target="_blank"></a>
-            </div>
-        </div>
-
-        <div class="h-line"></div>
-
-        
-
-        <div class="portfolio-hero">
-            <div class="portfolio-cs-team-header">
-                <h1 class="reveal">CREATIVE SERVICES TEAM</h1>
-                <p class="reveal">Get to know our The award-winning storytellers and strategists behind our brand campaigns, video production, and digital marketing.</p>
+        <section class="portfolio-grid-section" id="portfolio-grid">
+            <div class="portfolio-grid-header reveal">
+                <p class="portfolio-kicker">Featured Projects</p>
+                <h2>Selected Creative Work</h2>
+                <p>
+                    A curated look at the campaigns, commercials, and brand storytelling pieces we’ve brought to life.
+                </p>
             </div>
 
-            <div class="leadership reveal">
-                <div class="pic reveal-left">
-                    <img src="assets/employee_icons/kameron.png" alt="">
-                    <div class="wrdw-leadership-text">
-                        <p><bold>Kameron Robinson</bold><br>
-                        Creative Services Director</p>
-                    </div>
-                </div>
+            <div class="portfolio-grid">
 
-                <div class="pic reveal-right">
-                    <img src="assets/employee_icons/kurt.png" alt="">
-                    <div class="wrdw-leadership-text">
-                        <p><bold>Kurt Smith</bold><br>
-                        Creative Services Producer</p>
+                <a href="https://www.youtube.com/watch?v=WtkokauKX0A" target="_blank" class="project-card reveal">
+                    <div class="project-thumb finch"></div>
+                    <div class="project-info">
+                        <h3>Finch & Fifth</h3>
+                        <p>Luxury lifestyle campaign highlighting elevated visuals, polished storytelling, and premium brand tone.</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="pic reveal-right">
-                    <img src="assets/employee_icons/clayton.png" alt="">
-                    <div class="wrdw-leadership-text">
-                        <p><bold>Clayton Richardson</bold><br>
-                        Creative Services Producer</p>
+                <a href="https://www.youtube.com/watch?v=6RWY7TQ-2_I" target="_blank" class="project-card reveal">
+                    <div class="project-thumb platts"></div>
+                    <div class="project-info">
+                        <h3>Platt's Funeral Home</h3>
+                        <p>Brand-focused messaging designed to build trust, clarity, and connection with the local community.</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="pic reveal-right">
-                    <img src="assets/employee_icons/jae.png" alt="">
-                    <div class="wrdw-leadership-text">
-                        <p><bold>Jae Corales</bold><br>
-                        Creative Services Producer</p>
+                <a href="https://youtu.be/Wk15FXeoFiI" target="_blank" class="project-card reveal">
+                    <div class="project-thumb fresh-take"></div>
+                    <div class="project-info">
+                        <h3>FreshTake Grocery</h3>
+                        <p>Retail-focused creative built to spotlight freshness, energy, and strong everyday brand appeal.</p>
                     </div>
-                </div>
+                </a>
+
+                <a href="#" class="project-card reveal">
+                    <div class="project-thumb project-placeholder-4"></div>
+                    <div class="project-info">
+                        <h3>Project Title Four</h3>
+                        <p>Short project description goes here to explain the campaign, creative direction, or client goal.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card reveal">
+                    <div class="project-thumb project-placeholder-5"></div>
+                    <div class="project-info">
+                        <h3>Project Title Five</h3>
+                        <p>Short project description goes here to explain the campaign, creative direction, or client goal.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card reveal">
+                    <div class="project-thumb project-placeholder-6"></div>
+                    <div class="project-info">
+                        <h3>Project Title Six</h3>
+                        <p>Short project description goes here to explain the campaign, creative direction, or client goal.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card reveal">
+                    <div class="project-thumb project-placeholder-7"></div>
+                    <div class="project-info">
+                        <h3>Project Title Seven</h3>
+                        <p>Short project description goes here to explain the campaign, creative direction, or client goal.</p>
+                    </div>
+                </a>
+
             </div>
+        </section>
 
-            <a href="about.html#sales_team" class="button-1" style="text-decoration: none;"><span>Meet our Sales Team!</span></a>
-        </div>
-
-        <div class="services">
-            <div class="services-wrapper">
-                <div class="services-1  reveal">
-                    <div class="services-box">
-                        <img src="assets/broadcast.png" alt="">
-                    </div>
-                    <p>Broadcast</p>
-                </div>
-
-                <div class="services-1 reveal">
-                    <div class="services-box">
-                        <img src="assets/tv.png" alt="">
-                    </div>
-                    <p>Streaming TV</p>
-                </div>
-
-                <div class="services-1 reveal">
-                    <div class="services-box">
-                        <img src="assets/radio.png" alt="">
-                    </div>
-                    <p>Streaming Radio</p>
-                </div>
-
-                <div class="services-1 reveal">
-                    <div class="services-box">
-                        <img src="assets/digital.png" alt="">
-                    </div>
-                    <p>Digital</p>
-                </div>
-
-                <div class="services-1 reveal">
-                    <div class="services-box">
-                        <img src="assets/billboards.png" alt="">
-                    </div>
-                    <p>Outdoor</p>
-                </div>
+        <section class="portfolio-cta-section">
+            <div class="portfolio-cta-card reveal">
+                <p class="portfolio-kicker">Let’s Build Something Great</p>
+                <h2>Ready to launch your next campaign?</h2>
+                <p>
+                    From concept to final delivery, we create work that helps brands stand out and stay remembered.
+                </p>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont btn-auto" target="_blank">
+                    <span>ADVERTISE WITH US</span>
+                </a>
             </div>
-
-            <div class="btn-services">
-                <a href="services.html" class="button-1 btnFont" style="width: auto;"><span style="font-size: 1rem;">VIEW OUR SERVICES</span></a>
-            </div>
-        </div>
-
-        <div class="collaborate-bg">
-            <div class="collaborate reveal">
-                <h3 class="reveal-right">Collaborate With Us!</h3>
-                <h1 class="reveal-left">Fuel Your Next Vision</h1>
-                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont" target="_blank" style="width: auto;"><span style="font-size: 1rem;">ADVERTISE WITH US</span></a>
-            </div>
-        </div> 
+        </section>
     </div>
 
     <div class="footer">
@@ -205,17 +140,32 @@
         </p>
 
         <p class="footer-right">
-            Coded by <a href="https://www.jcorales.art">Jae Corales</a> - fueled by coffee and deadlines.
+            Coded by <a href="https://www.jcorales.art" target="_blank">Jae Corales</a> - fueled by coffee and deadlines.
         </p>
     </div>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuItems = document.querySelector('.menu-items');
 
-<!-- ANIMATIONS -->
+        if (menuToggle && menuItems) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = menuItems.classList.toggle('open');
+                menuToggle.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            menuItems.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuItems.classList.remove('open');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
 
     <script src="https://kit.fontawesome.com/74ef3fc04a.js" crossorigin="anonymous"></script>
-
     <script src="main.js"></script>
-<!-- END OF ANIMATIONS -->
 </body>
 </html>
-

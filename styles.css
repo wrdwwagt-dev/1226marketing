@@ -1880,7 +1880,7 @@ li{
     .services{
         display: flex;
         flex-wrap: wrap;
-        height: 25vh;
+        height: 50vh;
     }
 
     .services-wrapper{
