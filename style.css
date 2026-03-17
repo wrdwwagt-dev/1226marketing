@@ -1789,11 +1789,6 @@ body::before {
     width: min(100%, 180px);
 }
 
-.about-page-body .contact {
-    padding: 0.7rem 1rem;
-    background-color: var(--btnColors);
-    border-radius: 1rem;
-}
 
 .aboutus-hero {
     display: flex;
