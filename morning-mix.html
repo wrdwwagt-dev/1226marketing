@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Mix | WRDW Creative Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="morning-mix-page">
+
+    <div class="container">
+        <header class="menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/gray_logo.png" class="logo-img" alt="Gray Logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu-items" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" target="_blank" class="btnFont contact glow-btn">
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </header>
+
+        <section class="mix-landing">
+            <div class="mix-landing-inner reveal">
+                <p class="mix-kicker">Lifestyle Show</p>
+                <h1>Morning Mix</h1>
+                <p class="mix-intro">
+                    A bright lifestyle segment series under WRDW/WAGT featuring sponsored conversations, community stories, and Friday visits to local businesses across the CSRA.
+                </p>
+
+                <div class="mix-hero-buttons">
+                    <a href="#mix-grid" class="button-2 btnFont glow-btn mix-glow-btn">
+                        <span>VIEW SEGMENTS</span>
+                    </a>
+
+                    <a href="https://www.wrdw.com/news/morning-mix/" target="_blank" class="button-1 btnFont btn-auto mix-solid-btn">
+                        <span>WATCH MORNING MIX</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mix-grid-section" id="mix-grid">
+            <div class="mix-grid-header reveal">
+                <p class="mix-kicker">Featured Segments</p>
+                <h2>Recent Morning Mix Highlights</h2>
+                <p>
+                    Sponsored and lifestyle-focused segments built to spotlight local businesses, community stories, and useful everyday topics.
+                </p>
+            </div>
+
+            <div class="mix-grid">
+
+                <a href="#" class="mix-card reveal">
+                    <div class="mix-thumb mix-thumb-1"></div>
+                    <div class="mix-info">
+                        <p class="mix-tag">Local Business</p>
+                        <h3>Friday Feature at a Local Favorite</h3>
+                        <p>A community-focused segment built around a local business visit, brand personality, and on-location storytelling.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="mix-card reveal">
+                    <div class="mix-thumb mix-thumb-2"></div>
+                    <div class="mix-info">
+                        <p class="mix-tag">Sponsored</p>
+                        <h3>Wellness and Everyday Living</h3>
+                        <p>A sponsored lifestyle segment designed to connect practical advice with a polished on-air presentation.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="mix-card reveal">
+                    <div class="mix-thumb mix-thumb-3"></div>
+                    <div class="mix-info">
+                        <p class="mix-tag">Community</p>
+                        <h3>Spotlight on Augusta Good News</h3>
+                        <p>A positive local feature focused on uplifting community stories and everyday wins around Augusta.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="mix-card reveal">
+                    <div class="mix-thumb mix-thumb-4"></div>
+                    <div class="mix-info">
+                        <p class="mix-tag">Home</p>
+                        <h3>Seasonal Home Refresh</h3>
+                        <p>A helpful home and lifestyle segment with a bright visual tone, practical takeaways, and sponsor visibility.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="mix-card reveal">
+                    <div class="mix-thumb mix-thumb-5"></div>
+                    <div class="mix-info">
+                        <p class="mix-tag">Health</p>
+                        <h3>Health and Comfort Conversations</h3>
+                        <p>A clean studio-driven sponsored segment built around awareness, comfort, and service-based messaging.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="mix-card reveal">
+                    <div class="mix-thumb mix-thumb-6"></div>
+                    <div class="mix-info">
+                        <p class="mix-tag">Lifestyle</p>
+                        <h3>Simple Tips for Better Mornings</h3>
+                        <p>A lifestyle segment format that blends approachable conversation, useful takeaways, and local relevance.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="mix-cta-section">
+            <div class="mix-cta-card reveal">
+                <p class="mix-kicker">Partner With Morning Mix</p>
+                <h2>Want your business featured on-air?</h2>
+                <p>
+                    From sponsored conversations to Friday business spotlights, Morning Mix gives local brands a polished way to connect with viewers.
+                </p>
+                <a href="https://www.wrdw.com/page/advertising-opportunities/" class="button-1 btnFont btn-auto mix-solid-btn" target="_blank">
+                    <span>ADVERTISE WITH US</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p class="footer-left">
+            &copy; WRDW 1226
+        </p>
+
+        <p class="footer-right">
+            Coded by <a href="https://www.jcorales.art" target="_blank">Jae Corales</a> - fueled by coffee and deadlines.
+        </p>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuItems = document.querySelector('.menu-items');
+
+        if (menuToggle && menuItems) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = menuItems.classList.toggle('open');
+                menuToggle.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            menuItems.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuItems.classList.remove('open');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>
