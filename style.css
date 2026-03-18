@@ -1535,6 +1535,71 @@ p {
     color: var(--font-colors);
 }
 
+/* TELEMUNDO */
+
+.project-info-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 88px;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project-info-left {
+    min-width: 0;
+}
+
+.project-info-left h3 {
+    margin-bottom: 0.45rem;
+}
+
+.project-info-left p {
+    margin-bottom: 0.45rem;
+}
+
+.project-platform-note {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--font-colors);
+    opacity: 0.9;
+}
+
+.project-info-right.telemundo-badge {
+    width: 88px;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.project-info-right.telemundo-badge img {
+    width: 52%;
+    height: 52%;
+    object-fit: contain;
+    opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+    .project-info-split {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .project-info-right.telemundo-badge {
+        width: 64px;
+        margin-left: 0;
+    }
+
+    .project-info-right.telemundo-badge img {
+        width: 56%;
+        height: 56%;
+    }
+}
+
+
 /* placeholder thumbs */
 .project-placeholder-4,
 .project-placeholder-5,
